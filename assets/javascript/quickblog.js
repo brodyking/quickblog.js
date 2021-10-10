@@ -28,6 +28,7 @@ function tabtitle(text) {
 //Blog Name
 function blogname(text) {
   document.getElementById("blogname").innerHTML = text
+  var blogname = text;
 }
 // About Header
 function aboutheader(text) {
@@ -56,7 +57,7 @@ var postcount = 0;
 function createpost(title, body, date) {
   if (postcount < 51) {
     postcount += 1;
-    document.getElementById("listing" + postcount).innerHTML = '<p class="item__urls"><a href="#" onclick="openTab(&quot;' + title + '&quot;);"><strong id="strong">' + title + '</strong></a> <span class="item__siteurl" id="url"></span></p><p class="item__meta"><span>' + date + '</span><a class="item__notes" href="#" onclick="alert("no notes!")">notes</a><a class="item__notes" href="#" onclick="alert("posted by Admin")">author</a></p></li>';
+    document.getElementById("listing" + postcount).innerHTML = '<p class="item__urls"><a href="#" onclick="openTab(&quot;' + title + '&quot;);"><strong id="strong">' + title + '</strong></a> <span class="item__siteurl" id="url"></span></p><p class="item__meta"><span>' + date + '</span><a class="item__notes" href="#" onclick="alert(&quot;Publish Date: ' + date +' == Title: ' + title + ' == Author: Admin&quot;)">meta</a><a class="item__notes" href="#" onclick="alert(&quot;' + body + '&quot;)">read</a></p></li>';
     document.getElementById("listing" + postcount).style.display = "list-item";
     document.getElementById("post" + postcount).innerHTML = '<main id="' + title + '" class="main city" style="display: none; padding: 5px;"><p class="left">' + body + '<br /><a href="#" onclick="openTab(&quot;timeline&quot;);">return to timeline</a></p></main>'
   } else {
