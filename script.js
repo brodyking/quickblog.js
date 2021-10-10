@@ -3,8 +3,7 @@ changeCSS('assets/stylesheets/delete.css')
 aboutheader("Quickblog.js")
 aboutme("Quckblog.js is a free javascript library that allows you to create a <i>quick blog</i> in minutes!")
 blogname("Quickblog.js")
-onclick="openTab('about')"
-
+tabtitle("Quickblog.js")
 
 
 
