@@ -1,0 +1,197 @@
+#aboutheader {
+  color: #32bfab
+}
+<style>
+	@font-face {
+		font-family: Monotype;
+		src: url(assets/fonts/gt.otf )format("opentype");
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		align-items: center;
+		display: flex;
+		font: 0.8rem/1rem Verdana, Geneva, Tahoma, sans-serif;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		background-color: #140f16;
+		color: #d792dd;
+	}
+
+	.item {
+		margin-bottom: 0.6rem;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: #d2738a;
+	}
+
+	a:hover {
+		color: #a65a6c;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	#header,
+	#footer {
+		background: #140f16;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		/* Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
+     */
+		padding: 0.4rem 0.8rem;
+		width: 960px;
+    border: 1px solid #d792dd;
+	}
+
+	#header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#header h1 {
+		font-size: 0.8rem;
+		margin: 0;
+	}
+
+	#header h1 a {
+		color: #d2738a;
+		text-decoration: none;
+	}
+
+	#header h1 a:hover {
+		color: #d2738a;
+		text-decoration: underline;
+	}
+
+	nav ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	nav ul li {
+		padding: 0 0 0 0.28rem;
+	}
+
+	nav a {
+		color: #d792dd;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: #d792dd;
+		text-decoration: underline;
+	}
+
+	.main {
+		background-color: #140f16;
+		width: 960px;
+    border: 1px solid #d792dd;
+	}
+
+	.item__urls {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		/* 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
+     */
+	}
+
+	.item__urls>a:first-child {
+		color: #32bfab;
+		text-decoration: none;
+	}
+
+	.item__urls>a:first-child:hover {
+		color: #146358;
+		text-decoration: underline;
+	}
+
+	.item__siteurl,
+	.item__siteurl>*,
+	.item__count {
+		color: #d792dd;
+		font-size: 0.7rem;
+		text-decoration: none;
+	}
+
+	.item__meta {
+		font-size: 0.6rem;
+		margin-top: 0;
+	}
+
+	.item__meta>* {
+		color: #d792dd;
+		margin-right: 0.5rem;
+	}
+
+	.item__count {
+		margin: 0 0 0 0.5rem;
+	}
+
+	ul.pagination {
+		display: flex;
+		list-style: none;
+	}
+
+	ul.pagination li {
+		margin: 0 0.4rem 0 0;
+	}
+
+	ul.pagination li a {
+		border: 1px solid black;
+		border-radius: 3px;
+		display: block;
+		padding: 0.3rem;
+		text-align: center;
+		text-decoration: none;
+		width: 32px;
+	}
+
+	ul.pagination li.active a {
+		border-color: orange;
+	}
+
+	.single {
+		padding: 1rem;
+	}
+
+	.single code {
+		background: #140f16;
+		font-size: 1rem;
+		padding: 0 0.5rem;
+	}
+
+	@media (max-width: 960px) {
+		#header,
+		.main,
+		#footer {
+			width: 100%;
+		}
+	}
+
+	.timeline {
+		display: flex;
+	}
+
+	.popup {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	section {
+		width: 100%;
+	}
+</style>

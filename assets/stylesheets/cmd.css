@@ -1,0 +1,193 @@
+#aboutheader {
+  color: #0dff00
+}
+<style>
+	@font-face {
+		font-family: 'Courier New', monospace;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		align-items: center;
+		display: flex;
+		font-family: 'Courier New', monospace;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		background-color: black;
+		color: white;
+	}
+
+	.item {
+		margin-bottom: 0.6rem;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: #0dff00;
+	}
+
+	a:hover {
+		color: #089e00;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	#header,
+	#footer {
+		background: black;
+		font-family: 'Courier New', monospace;
+		padding: 0.4rem 0.8rem;
+		width: 960px;
+    border: 1px solid white;
+	}
+
+	#header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#header h1 {
+		font-size: 0.8rem;
+		margin: 0;
+	}
+
+	#header h1 a {
+		color: white;
+		text-decoration: none;
+
+	}
+
+	#header h1 a:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	nav ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	nav ul li {
+		padding: 0 0 0 0.28rem;
+	}
+
+	nav a {
+		color: white;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	.main {
+		background-color: black;
+		width: 960px;
+    border: 1px solid white;
+	}
+
+	.item__urls {
+		font-family: 'Courier New', monospace;
+	}
+
+	.item__urls>a:first-child {
+		color: #0dff00;
+		text-decoration: none;
+	}
+
+	.item__urls>a:first-child:hover {
+		color: #0dff00;
+		text-decoration: underline;
+	}
+
+	.item__siteurl,
+	.item__siteurl>*,
+	.item__count {
+		color: white;
+		font-size: 0.7rem;
+		text-decoration: none;
+	}
+
+	.item__meta {
+		font-size: 0.6rem;
+		margin-top: 0;
+	}
+
+	.item__meta>* {
+		color: white;
+		margin-right: 0.5rem;
+	}
+
+	.item__count {
+		margin: 0 0 0 0.5rem;
+	}
+
+	ul.pagination {
+		display: flex;
+		list-style: none;
+	}
+
+	ul.pagination li {
+		margin: 0 0.4rem 0 0;
+	}
+
+	ul.pagination li a {
+		border: 1px solid black;
+		border-radius: 3px;
+		display: block;
+		padding: 0.3rem;
+		text-align: center;
+		text-decoration: none;
+		width: 32px;
+	}
+
+	ul.pagination li.active a {
+		border-color: orange;
+	}
+
+	.single {
+		padding: 1rem;
+	}
+
+	.single code {
+		background: #fdbcfb;
+		font-size: 1rem;
+		padding: 0 0.5rem;
+	}
+
+	@media (max-width: 960px) {
+		#header,
+		.main,
+		#footer {
+			width: 100%;
+		}
+	}
+
+	.timeline {
+		display: flex;
+	}
+
+	.popup {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	section {
+		width: 100%;
+	}
+</style>
