@@ -4,7 +4,7 @@ aboutheader("Quickblog.js")
 aboutme("Quckblog.js is a free javascript library that allows you to create a <i>quick blog</i> in minutes!")
 blogname("Quickblog.js")
 tabtitle("Quickblog.js")
-
+footer("Made by <a href='https://github.com/brodyking/quickblog.js'>quickblog.js</a>")
 
 
 // DELETE ALL OF THIS DOWN VVVV

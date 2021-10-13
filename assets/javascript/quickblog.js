@@ -50,7 +50,10 @@ function popup(text) {
     document.getElementById("popup").style.display = "none";
   }
 }
-
+// Watermark
+function footer(text) {
+  document.getElementById("watermark").innerHTML = text
+}
 // Creating a post
 var postcount = 0;
 // Create post
