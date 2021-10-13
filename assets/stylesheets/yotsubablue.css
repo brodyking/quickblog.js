@@ -64,12 +64,12 @@
 	}
 
 	#header h1 a {
-		color: black;
+		color: white;
 		text-decoration: none;
 	}
 
 	#header h1 a:hover {
-		color: black;
+		color: white;
 		text-decoration: underline;
 	}
 
@@ -85,12 +85,12 @@
 	}
 
 	nav a {
-		color: black;
+		color: white;
 		text-decoration: none;
 	}
 
 	nav a:hover {
-		color: black;
+		color: white;
 		text-decoration: underline;
 	}
 
