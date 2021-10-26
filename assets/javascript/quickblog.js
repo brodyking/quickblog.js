@@ -121,5 +121,7 @@ function select() {
     changeCSS('assets/stylesheets/yotsuba.css')
   } else if (zone.value == "yotsubablue") {
     changeCSS('assets/stylesheets/yotsubablue.css')
+  } else if (zone.value == "custom") {
+    changeCSS('assets/stylesheets/custom.css')
   } 
 }
