@@ -1,19 +1,23 @@
-changeCSS('assets/stylesheets/dark.css'); // Default CSS File
+// Basic setup and custimization
+// KEEP THIS AND CHANGE IT TO WHAT YOU WANT!
+changeCSS('assets/stylesheets/delete.css');
+aboutheader("Quickblog.js");
+aboutme("Quckblog.js is a free javascript library that allows you to create a <i>quick blog</i> in minutes!");
+blogname("Quickblog.js");
+tabtitle("Quickblog.js");
+footer("Made by <a href='https://github.com/brodyking/quickblog.js'>quickblog.js</a>");
+themeswapper("true");
+popup("true")
 
-aboutheader("aboutheader"); // About Header
+// DELETE ALL OF THIS DOWN BELOW THIS COMMENT
+// THIS IS ALL STUFF I HAD TO KEEP TO MAKE GITHUB PAGES WORK CORRECTLY
+createpost("1.0 Official Release!","This is the first release of Quickblog.js. I hope you all like it. You can check the docs for information on how to install. We have moved all files to a github respitory. Hosting was too much of a hassle.","10/10/2021","Admin")
+createpost("1.1 Patch","Added a footer() function that allows you to change the footer on the page.This can be useful to anyone who wants to add social links or any other text!We also changed yotsubablue.css to have white navigation links.I know that a lot of people who used this theme changed this themselves so it is now a default style.We are aware of the 26 post limit and it will be fixed soon!1.2 will have that issue fixed! If you want to look more in-depth in the changes, check the commits.","10/20/2021","Admin")
+createpost("1.2 Patch. New custom themes!","Added custom css file for each blog. If you are a site admin who wants to make a custom css file, edit the css file in assets/stylesheets/custom.css","10/25/2021","Admin")
+createpost("2.0 Quality of life update.","We added a whole ton of features to quickblog! <ul style='text-align: left'><li>custom themes</li><li>switchboard</li><li>added 9 more page slots</li><li>removed about page</li><li>added 'more pages' menu</li><li>changed the script.js file to package.js</li><li>post author's added and new post meta box at the end of the post</li><li>added more tutorials to the quickblog.js website!</li><li>added a post and page generator in the switchboard<li>added a load css file option to load other css files to the website</li></ul>","10/29/2021","Admin")
 
-aboutme("aboutme"); // About me
-
-blogname("blogname"); // Your Blog Name
-
-tabtitle("tabtitle"); // Text in the tab title
-
-footer("footer"); // Footer text
-
-themeswapper("true"); // Allow the user to change themes
-
-popup("true") // Show the popup at the top of the webpage
-
-createpost("title","body","date","author") // Template Post
-
-createpage("title","body") // Template Page
+createpage('about','Welcome to quickblog! Quickblog is open-source software that lets you create a static HTML blog in seconds.<br> All you need is a web browser and a hosting platform of your choice!<br> <br> <b>Why use quickblog?</b><br> Quickblog.js is a great way to setup a blog for free with minimal effort.<br> <b>How do I set it up?</b><br> Quickblog.js is very easy to setup. All you have to do it download the latest github release and upload it to your hosting!<br> Then, open package.js and change everything to how you want it to look.<br> <br> For more information, checkout the setup page.<br>');
+createpage('[easy] setup','To get started, goto the <a href="https://www.github.com/brodyking/quickblog.js/releases">github releases</a> and download the most recent one.<br> Then, upload to a hosting of your choice. We reccomend just reuploading it to github and just creating a github pages project.<br> <br> Now, open package.js. This file is used to store all of the contents of your website.<br> First, delete all of the stuff under the comment "delete all of this down VVV"<br> Then change all of the default settings at the top of the file.<br>');
+createpage('[easy] create a post',"To create a post, go into your package.js file and make a new line. Then goto your website (in the browser) and click the CTRL key on your keyboard. That should open the switchboard. Scrool down and click 'generate new post'. Follow the prompts until it gives you a giant line of code. Copy and paste that into your package.js file.<br><br>NOTE: there is a maximum of 50 posts.");
+createpage('[easy] create a page',"To create a page, go into your package.js file and make a new line. THen goto your website (in the browser) and click the CTRL key on your keyboard. That should open the switchboard. Scrool down and click 'gerneate new page'. Follow the prompts until it gives you a giant line of code. Copy and paste that into your package.js file.<br><br>NOTE: there is a maximum of 10 pages.");
+createpage('[adanced] custom themes',"To create a custom theme, go into <code>assets/stylesheets/custom.css</code> and change what you want. Then change the default css file to the custom one.<br><br>If you want to load a custom theme on someone elses website, click CTRL to open the switchboard and click 'import css file.' Then paste in the file's URL and the css file should load in. NOTE: you can also type a location of a local css file from the hosts server.");
