@@ -2,7 +2,6 @@
 <html lang="en">
 <title id="tabtitle">{tabtitle}</title>
 <link rel="stylesheet" href="assets/stylesheets/dark.css">
-
 <body>
 	<!-- popup -->
 	<section id="popup">
@@ -31,9 +30,9 @@
 				<nav>
 					<ul>
 						<li><a href="#" onclick="openTab('timeline')">[timeline]</a></li>
-						<li><a href="#" onclick="openTab('about')">[about]</a></li>
 						<li><a href="#" style="display:none;" onclick="openTab('page1')" id="page1link"></a></li>
-					</ul>
+						<li><a href="#" style="display:none;" onclick="openTab('pages')" id="pageslink">[☰]</a></li>
+          </ul>
 				</nav>
 			</header>
 		</center>
@@ -148,20 +147,68 @@
 			<li class="item" id="listing1" style="display:none;"></li>
 		</ol>
 	</main>
-	<!-- about -->
-	<main id="about" class="main city" style="display: none; padding: 5px;">
-		<h2 id="aboutheaderlong">{aboutheader}</h2>
-		<p id="aboutmelong">{aboutme}</p>
+	<!-- switchboard -->
+	<main id="switchboard" class="main city" style="display: none; padding: 5px;">
+		<code>
+      <h1>Shell</h1>
+      <p id="shell"></p>
+      <h1>Switchboard</h1>
+      <button onclick="importCss()">Import CSS file</button>
+      <button onclick="generatePost()">Generate New Post</button>
+      <button onclick="generatePage()">Generate New Page</button>
+      <h1>Credits</h1>
+      <p>The quickblog.js framework was made with &lt;3 by <a href="https://www.github.com/brodyking">brody king</a>.<br>
+      Themes inspired by <a href="https://www.lainchan.org/">lainchain.org</a></p>
+    </code>
 	</main>
 	<!-- pages -->
 	<main id="page1" class="main city" style="display: none; padding: 5px;">
 	</main>
+	<main id="page2" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="pages" class="main city" style="display: none; padding: 5px;">
+    <ul style="list-style: none;padding-left: 5%;">
+      <li> Extra Pages:</li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page2')" id="page2link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page3')" id="page3link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page4')" id="page4link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page5')" id="page5link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page6')" id="page6link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page7')" id="page7link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page8')" id="page8link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page9')" id="page9link"></a></li>
+      <li> <a href="#" style="display:none;" onclick="openTab('page10')" id="page10link"></a></li>
+  </ul>
+	</main>
+  <main id="page3" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="page4" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="page5" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="page6" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="page7" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="page8" class="main city" style="display: none; padding: 5px;">
+	</main>
+  	<main id="page9" class="main city" style="display: none; padding: 5px;">
+	</main>
+	<main id="page10" class="main city" style="display: none; padding: 5px;">
+	</main>
+
+  <!-- alert -->
+  	<main id="alertpage" class="main city" style="display: none; padding: 5px;">
+      <p id="alertxt"></p>
+	</main>
+
 	<!-- footer -->
+
 
 	<footer id="footer">
 				<nav style="display: inline">
 					<ul style="display: inline">
-						<li style="display: inline"><a href="https://github.com/brodyking/quickblog.js">[quickblog.js]</a> <a href="https://github.com/brodyking/quickblog.js/releases">[v1.2]</a></li>
+						<li style="display: inline"><a href="https://github.com/brodyking/quickblog.js">[quickblog.js]</a> <a href="https://github.com/brodyking/quickblog.js/releases">[v2]</a></li>
           </ul>
 				</nav>
     <select id="zoneSelect" onchange="select();" style="display: inline-block; float: right;">
@@ -178,7 +225,7 @@
       <option value="poison">poison</option>
       <option value="yotsuba">yotsuba</option>
       <option value="yotsubablue">yotsubablue</option>
-      <option value="custom">custom</option>
+      <option value="custom">site-specific</option>
     </select>
 
 	</footer>
@@ -189,8 +236,7 @@
 	<script src="assets/javascript/quickblog.js">
 
 	</script>
-	<script src="script.js">
-
+	<script src="package.js">
 	</script>
 
 </body>
